@@ -1,0 +1,8 @@
+<mat-selection-list #shoes [multiple]="false">
+    <mat-list-option 
+        *ngFor="let section of sections" 
+        [value]="section"
+        routerLink="{{section.key}}">
+      {{section.value}}
+    </mat-list-option>
+  </mat-selection-list>

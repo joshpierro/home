@@ -1,0 +1,32 @@
+.main-head 
+  grid-area: header
+  box-shadow:0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f
+
+.content 
+  grid-area: content
+  padding: 20px
+
+.main-nav 
+  grid-area: nav
+  height:95vh
+  background-color: #f8f8f8
+  padding-top: 20px
+
+.side 
+  grid-area: sidebar
+  
+.ad 
+  grid-area: ad
+
+.main-footer 
+  grid-area: footer
+
+.wrapper 
+  display: grid
+  gap: 0px
+  grid-template-columns: 1fr 4fr 1fr
+  grid-template-areas: "header header header" "nav content sidebar" "nav content ad" "footer footer  footer"
+ 
+
+
+

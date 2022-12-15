@@ -11,7 +11,7 @@ export class SideNavComponent implements OnInit {
     {key:'home', value:'About'},
     {key:'projects', value: 'Projects'},
     // {key: 'education', value:'Education'},
-    {key:'contact', value:'Contact'}
+    // {key:'contact', value:'Contact'}
   ];
   
   constructor() { }

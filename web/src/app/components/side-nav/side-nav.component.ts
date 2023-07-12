@@ -8,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class SideNavComponent implements OnInit {
 
   sections: {key:string,value:string}[]  = [
-    {key:'home', value:'About'},
-    {key:'projects', value: 'Projects'},
-    // {key: 'education', value:'Education'},
-    // {key:'contact', value:'Contact'}
+    {key:'', value:'About'},
+    {key:'contact', value:'Contact'},
+    {key:'projects', value: 'Projects'}
   ];
   
   constructor() { }

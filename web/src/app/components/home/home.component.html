@@ -1,23 +1,21 @@
+<h1>
+   HelloInternet
+</h1>
 <p>
-   <Strong> Promise Yourself:</Strong>
-</p><p>
-To be so strong that nothing can disturb your peace of mind.
-</p><p>
-To talk health, happiness and prosperity to every person you meet.
-</p><p>
-To make all your friends feel that there is something in them.
-</p><p>
-To look at the sunny side of everything and make your optimism come true.
-</p><p>
-To think only of the best, to work only for the best, and to expect only the best.
-</p><p>
-To be just as enthusiastic about the success of others as you are about your own.
-</p><p>
-To forget the mistakes of the past and press on to the greater achievements of the future.
-</p><p>
-To wear a cheerful countenance at all times and give every living creature you meet a smile.
-</p><p>
-To give so much time to the improvement of yourself that you have no time to criticize others.
-</p><p>
-To be too large for worry, too noble for anger, too strong for fear, and too happy to permit the presence of trouble. 
+   This is the home page of Josh Dallett Pierro on the world wide web!  
+   I do not participate in social media, but all profiles point to here. 
+   Stay tuned for more content, feel free to  
+   <a routerLink="contact">get in touch</a> and take a moment to consider the <a href="https://www.optimist.org/member/membersmenu.cfm">Optimists Creed:</a>
 </p>
+
+<mat-list role="list">
+   <div mat-subheader>Promise Yourself:</div>
+   <mat-list-item role="listitem" *ngFor="let item of creedItems">
+      <mat-icon matListItemIcon> {{item.icon}} </mat-icon>
+      <div matListItemTitle>{{item.text}}</div>
+   </mat-list-item>
+</mat-list>
+
+
+
+

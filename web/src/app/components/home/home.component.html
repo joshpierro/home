@@ -2,20 +2,16 @@
    HelloInternet
 </h1>
 <p>
-   This is the home page of Josh Dallett Pierro on the world wide web!  
-   I do not participate in social media, but all profiles point to here. 
-   Stay tuned for more content, feel free to  
-   <a routerLink="contact">get in touch</a> and take a moment to consider the <a href="https://www.optimist.org/member/membersmenu.cfm">Optimists Creed:</a>
+   This is the home page of Josh Dallett Pierro on the world wide web!
+   I do not participate in social media, but all profiles point to here.
+   Stay tuned for more content, but feel free to
+   <a routerLink="contact">get in touch</a> and take a moment to consider the <a
+      href="https://www.optimist.org/member/membersmenu.cfm">Optimists Creed</a> and Promise Yourself:
 </p>
 
-<mat-list role="list">
-   <div mat-subheader>Promise Yourself:</div>
-   <mat-list-item role="listitem" *ngFor="let item of creedItems">
-      <mat-icon matListItemIcon> {{item.icon}} </mat-icon>
-      <div matListItemTitle>{{item.text}}</div>
-   </mat-list-item>
-</mat-list>
-
-
-
-
+<div>
+   <p *ngFor="let item of creedItems">
+      <mat-icon aria-hidden="false">{{item.icon}}</mat-icon>
+      <span>{{item.text}}</span>
+   </p>
+</div>
